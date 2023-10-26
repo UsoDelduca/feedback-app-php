@@ -13,5 +13,5 @@ This project is part of a YouTube code-along video that explains the basics of P
 
 As PHP has been used in several tech tests and is fairly simple to learn, I decided to give it a go  
 
-I had a chance to work with XAMPP suit to get acquainted with it
+I had a chance to work with XAMPP suit to get acquainted with it, and also got a little familiarized with Bootstrap (CSS)
 
