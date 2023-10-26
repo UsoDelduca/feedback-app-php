@@ -1,5 +1,19 @@
 <?php
 define('DB_HOST', 'localhost');
-define('USER', 'rod');
+define('DB_USER', 'rod');
 define('DB_PASS', 'rud1510');
 define('DB_NAME', 'php_dev');
+
+
+// Create connection //
+
+$conn = new mysqli(DB_HOST, DB_USER, DB_PASS, DB_NAME);
+
+
+// Check connection //
+
+if($conn->connect_error){
+  die('Connection Failed ' . $conn->connect_error);
+}
+
+echo 'Connected'
