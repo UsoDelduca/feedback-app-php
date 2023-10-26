@@ -17,7 +17,7 @@
   <body>
     <nav class="navbar navbar-expand-sm navbar-light bg-light mb-4">
       <div class="container">
-        <a class="navbar-brand" href="#">Traversy Media</a>
+        <a class="navbar-brand" href="#">Koko Media</a>
         <button
           class="navbar-toggler"
           type="button"
