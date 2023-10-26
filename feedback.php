@@ -30,19 +30,19 @@
         <div class="collapse navbar-collapse" id="navbarNav">
           <ul class="navbar-nav ms-auto">
             <li class="nav-item">
-              <a class="nav-link" href="/php-crash/feedback-app-php/index.html"
+              <a class="nav-link" href="/php-crash/feedback-app-php/index.php"
                 >Home</a
               >
             </li>
             <li class="nav-item">
               <a
                 class="nav-link"
-                href="/php-crash/feedback-app-php/feedback.html"
+                href="/php-crash/feedback-app-php/feedback.php"
                 >Feedback</a
               >
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="/php-crash/feedback-app-php/about.html"
+              <a class="nav-link" href="/php-crash/feedback-app-php/about.php"
                 >About</a
               >
             </li>
