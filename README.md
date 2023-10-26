@@ -5,7 +5,8 @@ PHP project to practice GET and POST
 
 This project is part of a YouTube code-along video that explains the basics of PHP  
 
-[PHP crash-course here](https://youtu.be/BUCiSSyIGGU?si=DwWow1ylPDQmolIV)
+[PHP crash-course here](https://youtu.be/BUCiSSyIGGU?si=DwWow1ylPDQmolIV)  
+[Original Github repo here](https://github.com/bradtraversy/php-crash)
 
 ## Motivation
 
