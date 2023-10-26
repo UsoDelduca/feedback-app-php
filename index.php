@@ -31,27 +31,47 @@
         } else {
           $body = filter_input(INPUT_POST, 'body', FILTER_SANITIZE_FULL_SPECIAL_CHARS);
         }
+
+        if(empty($nameErr) && empty($emailErr) && empty($bodyErr)){
+          // ADD to the DB //
+
+          $sql = "INSERT INTO feedback (name, email, body) VALUES('$name', '$email','$body')";
+
+          if(mysqli_query($conn, $sql)){
+            // SUCCESS!!! //
+
+            header('location: feedback.php');
+
+            
+          } else {
+            echo 'Error: ' . mysqli_error($conn);
+          }
+
+        }
       }
 
       
 ?>
 
-        <img src="/php-crash/feedback-app-php/img/Koko.jpg" class="w-25 mb-3" alt="" />
+        <img src="/php-crash/feedback-app-php/img/Koko.jpg" class="w-25 mb-3 rounded" alt="" />
         <h2>Feedback</h2>
-        <p class="lead text-center">Leave feedback for Traversy Media</p>
+        <p class="lead text-center">Leave feedback for Koko</p>
         <form action="<?php echo htmlspecialchars($_SERVER['PHP_SELF']); ?>" method='POST'  class="mt-4 w-75">
           <div class="mb-3">
             <label for="name" class="form-label">Name</label>
             <input
               type="text"
-              class="form-control"
+              class="form-control <?php echo $nameErr ? 'is-invalid': null ?>"
               id="name"
               name="name"
               placeholder="Enter your name"
             />
+            <div class="invalid-feedback">
+              <?php echo $nameErr ?>
+            </div>
           </div>
           <div class="mb-3">
-            <label for="email" class="form-label">Email</label>
+            <label for="email" class="form-label <?php echo $emailErr ? 'is-invalid': null ?>">Email</label>
             <input
               type="email"
               class="form-control"
@@ -59,15 +79,21 @@
               name="email"
               placeholder="Enter your email"
             />
+            <div class="invalid-feedback">
+              <?php echo $emailErr ?>
+            </div>
           </div>
           <div class="mb-3">
-            <label for="body" class="form-label">Feedback</label>
+            <label for="body" class="form-label <?php echo $bodyErr ? 'is-invalid': null ?>">Feedback</label>
             <textarea
               class="form-control"
               id="body"
               name="body"
               placeholder="Enter your feedback"
             ></textarea>
+            <div class="invalid-feedback">
+              <?php echo $bodyErr ?>
+            </div>
           </div>
           <div class="mb-3">
             <input
