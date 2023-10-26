@@ -3,7 +3,8 @@ PHP project to practice GET and POST
 
 ## Disclaimer
 
-This project is part of a YouTube code-along video that explains the basics of PHP
+This project is part of a YouTube code-along video that explains the basics of PHP  
+
 [PHP crash-course here](https://youtu.be/BUCiSSyIGGU?si=DwWow1ylPDQmolIV)
 
 ## Motivation
